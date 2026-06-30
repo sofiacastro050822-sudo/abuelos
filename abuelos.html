@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Aniversario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos Generales y Fondo */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f1ea; /* Tono crema suave de fondo */
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor Principal de la Invitación */
+        .invitation-card {
+            background-color: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid #e2ded5;
+            text-align: center;
+        }
+
+        /* Sección de la Imagen (Inspiración foto vintage/tira de fotos) */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            background-color: #d1cbc4;
+            /* Reemplaza la URL de abajo por la foto de los anfitriones */
+            background-image: url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Filtro nostálgico sutil sobre la foto */
+        .image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(141, 125, 110, 0.15); 
+            mix-blend-mode: sepia;
+        }
+
+        /* Contenido de Texto */
+        .content {
+            padding: 40px 30px;
+            color: #2c2c2c;
+        }
+
+        /* Encabezado del Aniversario */
+        .anniversary-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-style: italic;
+            margin: 0;
+            color: #1a1a1a;
+            line-height: 1;
+        }
+
+        .anniversary-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin: 5px 0 25px 0;
+            color: #7d7569;
+            font-weight: 400;
+        }
+
+        .intro-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Nombres de los Protagonistas (Efecto dorado sutil) */
+        .names {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.8rem;
+            font-weight: 400;
+            margin: 10px 0 30px 0;
+            color: #9a8454; /* Tono dorado/oliva de la segunda imagen */
+            line-height: 1.2;
+        }
+
+        /* Separador elegante */
+        .divider {
+            width: 50px;
+            height: 1px;
+            background-color: #9a8454;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Detalles del Evento (Fecha, Hora, Lugar) */
+        .details-section {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .date-time {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #1a1a1a;
+        }
+
+        .location {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #4a4a4a;
+            margin-top: 5px;
+        }
+
+        /* Sección de RSVP */
+        .rsvp-section {
+            border-top: 1px solid #eae6dd;
+            padding-top: 25px;
+        }
+
+        .rsvp-title {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.5rem;
+            margin: 0 0 8px 0;
+            color: #1a1a1a;
+        }
+
+        .rsvp-details {
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: #555;
+        }
+
+        .rsvp-phone {
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <div class="image-container"></div>
+
+        <div class="content">
+            <h1 class="anniversary-title">50th</h1>
+            <p class="anniversary-subtitle">Aniversario</p>
+            
+            <p class="intro-text">Por favor acompáñanos a celebrar el aniversario de</p>
+            <h2 class="names">Jillian & Jim</h2>
+            
+            <div class="divider"></div>
+            
+            <div class="details-section">
+                <div class="date-time">Domingo, 30 de Agosto, 2026</div>
+                <div class="date-time">A partir de la una de la tarde</div>
+                <div class="location">Hotel Hilton Inn & Suites<br>23 Smith Street, San Diego, CA</div>
+            </div>
+            
+            <div class="rsvp-section">
+                <h3 class="rsvp-title">R.S.V.P.</h3>
+                <p class="rsvp-details">Favor de confirmar antes del 1 de Agosto con Lisa al <a href="tel:123456789" class="rsvp-phone">123-456-789</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
